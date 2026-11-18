@@ -7,7 +7,10 @@ feat(data): query builder with SQL Server and HANA dialects
 
 <!-- What changed and why, in plain words. Anything the owner must do. -->
 
-Closes #
+Refs #
+
+<!-- Refs, not Closes: PRs go into dev, and GitHub closes issues by keyword
+only on the default branch. Close the issues after the merge. -->
 
 ## Verification
 
@@ -17,7 +20,7 @@ Test depth: Light | Standard | Full
 |---|----------|----------------|--------|----------|
 | 1 |          |                |        |          |
 
-Ran at: <commit>, on <host>; B1 <version and patch level>; database <SQL Server or HANA version>
+Tested commit: <sha> (contains latest dev), on <host>; B1 <version and patch level>; database <SQL Server or HANA version>
 
 **The issue's own claim:** <quote the acceptance sentence and show it is now true>
 

@@ -6,7 +6,7 @@ body:
     id: what
     attributes:
       label: What happens
-      description: Observed behaviour, with the exact error or log line. Test data only, no real names or company data.
+      description: Observed behaviour, with a short excerpt of the error or log. Remove usernames, paths with names, hostnames, real names and company data first; this may be public.
     validations:
       required: true
   - type: textarea
@@ -38,4 +38,4 @@ body:
     id: notes
     attributes:
       label: Notes
-      description: Suspected cause, related issues, what was already ruled out.
+      description: Suspected cause, related issues, what was already ruled out. Test depth and quality focus are added at triage, before the bug is marked ready.

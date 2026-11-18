@@ -1,0 +1,43 @@
+name: Feature
+description: One new capability, alone or as a sub-issue of an epic.
+title: "feat: "
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What a user or developer can do afterwards, and why it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance
+      description: Sentences that are true when it is done. Each one gets a test.
+    validations:
+      required: true
+  - type: textarea
+    id: paths
+    attributes:
+      label: Paths
+      description: The narrowest paths the change touches.
+  - type: dropdown
+    id: depth
+    attributes:
+      label: Test depth
+      options:
+        - Light
+        - Standard
+        - Full
+    validations:
+      required: true
+  - type: textarea
+    id: quality
+    attributes:
+      label: Quality focus
+      description: The criteria to check in depth, each with one line on how.
+  - type: textarea
+    id: security
+    attributes:
+      label: Security
+      description: Beyond Light depth. What can go wrong, what we do about it, which test proves it.

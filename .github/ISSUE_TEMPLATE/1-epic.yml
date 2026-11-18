@@ -1,0 +1,51 @@
+name: Epic
+description: A planned bundle of related issues, built on one epic branch with one pull request.
+title: "epic: "
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What this epic delivers and why, in plain words.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Repositories and paths it touches. What is out of scope.
+    validations:
+      required: true
+  - type: textarea
+    id: children
+    attributes:
+      label: Sub-issues
+      description: Add the sub-issues as native sub-issues, in dependency order. Dependencies are native "blocked by" links.
+      placeholder: Listed as native sub-issues.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance
+      description: Sentences that are true when the epic is done.
+    validations:
+      required: true
+  - type: dropdown
+    id: depth
+    attributes:
+      label: Test depth
+      options:
+        - Light
+        - Standard
+        - Full
+    validations:
+      required: true
+  - type: textarea
+    id: quality
+    attributes:
+      label: Quality focus
+      description: The criteria this epic must meet in depth, each with one line on how.
+  - type: textarea
+    id: security
+    attributes:
+      label: Security
+      description: What can go wrong, what we do about it, which test proves it. Or "none" with the reason.

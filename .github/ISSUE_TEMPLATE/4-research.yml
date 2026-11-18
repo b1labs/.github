@@ -1,0 +1,31 @@
+name: Research
+description: A question to answer with sources or an own test, for a plan or the knowledge base.
+title: "research: "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What exactly needs an answer, and what decision waits on it.
+    validations:
+      required: true
+  - type: textarea
+    id: known
+    attributes:
+      label: Known so far
+      description: Existing notes, links, assumptions to check.
+  - type: dropdown
+    id: target
+    attributes:
+      label: Where the answer goes
+      options:
+        - Research note
+        - Knowledge base
+        - Plan or ADR
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: What counts as a sufficient answer (sources, own test on the test pair, B1 version).

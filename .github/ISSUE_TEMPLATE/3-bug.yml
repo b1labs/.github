@@ -1,0 +1,41 @@
+name: Bug
+description: Something does not work as intended.
+title: "fix: "
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      description: Observed behaviour, with the exact error or log line. Test data only, no real names or company data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version and commit
+      description: Repository version or commit where it happens.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: B1 version and patch level, database (SQL Server or HANA) and version, .NET runtime.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Suspected cause, related issues, what was already ruled out.
